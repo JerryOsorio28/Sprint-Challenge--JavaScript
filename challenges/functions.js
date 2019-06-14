@@ -6,6 +6,13 @@
   * The last parameter accepts a callback 
   * In the body of the function return the callback with the two parameters that you created
 */
+// const names = ["Jerry", "Nerma"];
+// const ages = ["27", "23"];
+
+
+    function callback(a, b, cb){
+        return cb(a, b);
+  }
 
 
 /* Step 2: Create several functions to callback with consume();
@@ -13,6 +20,18 @@
   * Create a function named multiply that returns the product of two numbers 
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
+
+function add(a, b, cb){
+  return cb(a + b);
+}
+
+
+function multiply(a, b, cb){
+  return cb(a * b);
+}
+function greeting(first, last, cb){
+  return cb (`Hello ${first-name} ${last-name} nice to meet you`);
+}
 
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
