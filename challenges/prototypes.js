@@ -32,7 +32,7 @@ function CuboidMaker (props) {
 */
 
 CuboidMaker.prototype.surfaceArea = function(){
-    return 2 * `${cuboid.length}` * `${cuboid.width}` + `${cuboid.length}` * `${cuboid.height}` + `${cuboid.width}` * `${cuboid.height}`
+    return 2 * (`${cuboid.length}` * `${cuboid.width}` + `${cuboid.length}` * `${cuboid.height}` + `${cuboid.width}` * `${cuboid.height}`)
   }
 
 
